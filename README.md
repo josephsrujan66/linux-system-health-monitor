@@ -10,6 +10,7 @@ The application collects system health information, stores the latest measuremen
 
 /***********************************************************************************
 /***********************************************************************************
+
 Features:
 * CPU usage monitoring
 * Memory usage monitoring
@@ -39,6 +40,7 @@ Features:
 
 /***********************************************************************************
 /***********************************************************************************
+
 Architecture
 
                          Linux System
@@ -82,6 +84,7 @@ Architecture
 
 /***********************************************************************************
 /***********************************************************************************
+
 Technologies:
 Core:
 C, Linux, POSIX APIs, GCC, pthreads, Linux system interfaces
@@ -99,6 +102,7 @@ systemd, cron
 
 /***********************************************************************************
 /***********************************************************************************
+
 Monitoring Engine
 
 The monitoring engine maintains a shared monitor_data_t structure.
@@ -124,6 +128,7 @@ Each thread:
 
 /***********************************************************************************
 /***********************************************************************************
+
 Project Installation
 ->Building the Monitor
     * Go to the project directory:
@@ -165,5 +170,6 @@ Project Installation
 
 /***********************************************************************************
 /***********************************************************************************
+
 Project Goal:
 The project demonstrates how low-level Linux system information can be collected in C, processed concurrently using POSIX threads, exposed through a custom HTTP interface, and presented through a live browser dashboard without relying on a large backend framework.
